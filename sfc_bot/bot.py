@@ -34,7 +34,8 @@ async def help_command(ctx: commands.Context) -> None:
         "!help: Show this help message.\n"
         "!birthday set MM-DD: Set your birthday.\n"
         "!birthday today: Show birthdays today.\n"
-        "!birthday list: List all registered birthdays."
+        "!birthday list: Show birthday calendar.\n"
+        "!notification <channel_id>: Set reminder channel."
     )
     await ctx.send(help_text)
 
