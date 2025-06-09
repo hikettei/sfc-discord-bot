@@ -1,13 +1,13 @@
 from __future__ import annotations
 
 import asyncio
-from abc import ABC, abstractmethod
+from abc import abstractmethod
 from datetime import datetime, timedelta, time
 from typing import Tuple
 
 from discord.ext import commands
 
-class ScheduledReminderCog(commands.Cog, ABC):
+class ScheduledReminderCog(commands.Cog):
     """Base class for reminders that run at a scheduled time each day."""
 
     #: Time to trigger the reminder each day as (hour, minute).
