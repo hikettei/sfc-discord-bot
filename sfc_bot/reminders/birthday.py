@@ -11,14 +11,9 @@ from discord.ext import commands
 from .base import ScheduledReminderCog
 
 BIRTHDAY_FILE = Path("birthdays.csv")
-# Time of day when birthday checks run (hour, minute). Useful for tests.
-CHECK_TIME = (0, 1)
 
 class BirthdayReminder(ScheduledReminderCog):
     """Cog handling birthday reminders."""
-
-    SCHEDULE_TIME = CHECK_TIME
-
     def __init__(self, bot: commands.Bot) -> None:
         self.birthdays: Dict[str, str] = {}
         super().__init__(bot)
