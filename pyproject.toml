@@ -4,6 +4,8 @@ version = "0.1.0"
 dependencies = [
     "discord.py>=2.3",
     "python-dotenv>=1.0",
+    "opencv-python-headless>=4.8",
+    "Pillow>=9.5",
 ]
 
 [tool.uv]
